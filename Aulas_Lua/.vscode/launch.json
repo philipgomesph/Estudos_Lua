@@ -1,0 +1,53 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "LuaHelper-Debug",
+            "request": "launch",
+            "name": "LuaHelper-DebugFile",
+            "luaPath": "",
+            "packagePath": [],
+            "luaFileExtension": "",
+            "connectionPort": 8818,
+            "stopOnEntry": true,
+            "useCHook": true,
+            "logLevel": 1
+        },
+        {
+            "name": "Debug Lua Interpreter",
+            "type": "lua-local",
+            "request": "launch",
+            "program": {
+                "lua": "lua",
+                "file": "${file}"
+            }
+        },
+        {
+            "name": "Debug Custom Lua Environment",
+            "type": "lua-local",
+            "request": "launch",
+            "program": {
+                "command": "command"
+            },
+            "args": []
+        }
+    ]
+
+    /*
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "lua",
+            "request": "launch",
+            "name": "Launch",
+            "program": "${workspaceFolder}/src/main.lua"
+        }
+    ]*/
+}
+
+
+   
